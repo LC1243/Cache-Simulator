@@ -9,6 +9,8 @@
 
 #define L1_LINE_COUNT 256
 #define L2_LINE_COUNT 512
+#define L2_2W_LINE_COUNT 256
+#define L2_ASSOCIATIVITY_SET 2
 
 #define MODE_READ 1
 #define MODE_WRITE 0
