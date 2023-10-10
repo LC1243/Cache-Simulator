@@ -1,5 +1,5 @@
-#ifndef L2CACHE_H
-#define L2CACHE_H
+#ifndef L2CACHE1W_H
+#define L2CACHE1W_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -15,11 +15,10 @@ uint32_t getTime();
 void accessDRAM(uint32_t, uint8_t *, uint32_t);
 
 /*********************** Cache *************************/
+void initCache();
 
-void initCacheL1();
 void accessL1(uint32_t, uint8_t *, uint32_t);
 
-void initCacheL2();
 void accessL2(uint32_t, uint8_t *, uint32_t);
 
 typedef struct CacheLine {
