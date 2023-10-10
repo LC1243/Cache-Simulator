@@ -5,9 +5,9 @@ int main() {
   uint32_t value1, value2, clock;
 
   resetTime();
-  initCacheL1();
-  initCacheL2();
-  //initCache();
+  //initCacheL1();
+  //initCacheL2();
+  initCache();
   value1 = -1;
   value2 = 0;
 
