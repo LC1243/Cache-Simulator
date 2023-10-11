@@ -53,7 +53,7 @@ void accessL1(uint32_t address, uint8_t *data, uint32_t mode) {
   offset = address << 26;
   offset = offset >> 26;
 
-  unsigned int mask = ((1 << 8) - 1); // maximum index value
+  unsigned int mask = ((1 << 8) - 1); // maximum index value - 0xFF
   index = address >> 6; // removes the offset
   index = index & mask; // removes the tag (assuming 32 bit address)
 
